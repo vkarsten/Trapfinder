@@ -7,7 +7,7 @@ public class RegexEx1 {
     public static void main(String[] args) {
         // Demo
         //Defining the String to be checked
-        String str = "there is a traP";
+        String str = "there is a tra";
 
         // Printing the result of the findTrap() method
         System.out.println(findTrap(str));
@@ -37,5 +37,12 @@ public class RegexEx1 {
         // returning BOO if a match is found
         return trapFinder.find() ? "BOO" : "Relax, there's no trap.";
     }
+
+    /*
+    Solving the same exercise only using string methods:
+    public static String findTrapString(String sourceText) {
+        return (sourceText.toLowerCase().indexOf("trap") > -1) ? "BOO" : "Relax, there's no trap.";
+    }
+    */
 
 }
