@@ -1,6 +1,5 @@
 package main.java;
 
-import java.util.Locale;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
