@@ -10,6 +10,7 @@ public class RegexEx2 {
         String str = "Happy Thanksgiving to all--even the haters and losers!";
         // Printing the modified string
         System.out.println(removeVowels(str));
+        System.out.println(removeVowels2(str));
     }
 
     /**
@@ -33,5 +34,11 @@ public class RegexEx2 {
 
         // Returning the new modified string
         return newText;
+
     }
+
+    public static String removeVowels2(String sourceText) {
+        return sourceText.replaceAll("[aeiouAEIOU]", "");
+    }
+
 }
